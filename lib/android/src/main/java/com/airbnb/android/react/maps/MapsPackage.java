@@ -39,12 +39,26 @@ public class MapsPackage implements ReactPackage {
     OpenAirMapCalloutManager calloutManager = new OpenAirMapCalloutManager();
     OpenAirMapMarkerManager annotationManager = new OpenAirMapMarkerManager();
     OpenAirMapPolylineManager polylineManager = new OpenAirMapPolylineManager(reactContext);
+    OpenAirMapPolygonManager polygonManager = new OpenAirMapPolygonManager(reactContext);
+    OpenAirMapCircleManager circleManager = new OpenAirMapCircleManager(reactContext);
     OpenAirMapManager mapManager = new OpenAirMapManager(reactContext);
+    OpenAirMapLiteManager mapLiteManager = new OpenAirMapLiteManager(reactContext);
+    OpenAirMapUrlTileManager urlTileManager = new OpenAirMapUrlTileManager(reactContext);
+    OpenAirMapLocalTileManager localTileManager = new OpenAirMapLocalTileManager(reactContext);
+    OpenAirMapOverlayManager overlayManager = new OpenAirMapOverlayManager(reactContext);
 
     return Arrays.<ViewManager>asList(
         calloutManager,
         annotationManager,
         polylineManager,
         mapManager);
+        polygonManager,
+        circleManager,
+        mapManager,
+        mapLiteManager,
+        urlTileManager,
+        localTileManager,
+        overlayManager
+    );
   }
 }

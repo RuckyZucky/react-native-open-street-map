@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/enieber/react-native-open-street-map"
+    "url": "https://github.com/react-native-community/react-native-maps"
   },
   "keywords": [
     "react",
@@ -52,8 +52,8 @@
     "jest": "^22.0.4",
     "lodash": "^4.17.2",
     "prop-types": "^15.5.10",
-    "react": "16.0.0",
-    "react-native": "0.51.0"
+    "react": "^16.3.2",
+    "react-native": "^0.54"
   },
   "rnpm": {
     "android": {
